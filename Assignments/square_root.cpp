@@ -1,5 +1,8 @@
-// Aparna Goyal (1911981092)
-// Binary Search in a Monotonic Search Space
+/** Program which computes the square root of a number without any inbuilt
+
+* @Aparna Goyal, 1911981092, 18/07/2021
+
+* Binary Search in a Monotonic Search Space */
 
 #include <iostream>
 using namespace std;
