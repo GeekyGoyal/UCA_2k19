@@ -8,7 +8,7 @@
 
 int main() {
     char str[N];
-    int vowels=0, consonants=0;
+    int Vowels=0, Consonants=0;
     printf("Enter  the string: ");
     fgets(str,N,stdin);
     for(int i = 0; str[i]; i++) 
@@ -17,14 +17,14 @@ int main() {
     	{
 		
             if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] =='I' || str[i] == 'O' || str[i] == 'U')
-		      vowels++;
+		      Vowels++;
             else
-             consonants++;
+             Consonants++;
         }
  
  	}
-    printf("vowels = %d\n",vowels);
-    printf("consonants = %d\n",consonants);
+    printf("Vowels = %d\n",Vowels);
+    printf("Consonants = %d\n",Consonants);
     
     return 0;
 
