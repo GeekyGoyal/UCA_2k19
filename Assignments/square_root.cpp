@@ -1,4 +1,4 @@
-/** Program which computes the square root of a number without any inbuilt
+/** Program which computes the square root of a number without any inbuilt function
 
 * @Aparna Goyal, 1911981092, 18/07/2021
 

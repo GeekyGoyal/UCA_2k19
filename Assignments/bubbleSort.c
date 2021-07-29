@@ -59,6 +59,7 @@ int main()
   else if(ch != 65 && ch != 66 && ch != 67) {
       printf("Please enter a valid input.");
   }
+
   bubbleSort(arr,n);
   return 0;
 }
