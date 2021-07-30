@@ -46,10 +46,10 @@ int main(void) {
   int c, i;
   char d[MAXLINE]; /* Will hold initial string for `t` */
   char s[MAXLINE], t[MAXLINE]; /* `t` will be reversed string */
-
-  while (getLine(s) > 0 && getLine(t) > 0) {
-    // reverse(d, t, c);
+  printf("Enter the first string: ");
+    scanf("%s",s);
+    printf("Enter the second string: ");
+    scanf("%s",t);
     i = strrindex(s, t);
     printf("Rightmost occurrence: %d\n", i);
-  }
 }
