@@ -46,7 +46,7 @@ int main(void) {
   int c, i;
   char d[MAXLINE]; /* Will hold initial string for `t` */
   char s[MAXLINE], t[MAXLINE]; /* `t` will be reversed string */
-  printf("Enter the first string: ");
+    printf("Enter the first string: ");
     scanf("%s",s);
     printf("Enter the second string: ");
     scanf("%s",t);
