@@ -1,5 +1,8 @@
 /** Implement insertion sort code and note down time to bubble sort using gettimeoftheday function.
 * 
+* Link to the run time complexity chart ---->
+* https://docs.google.com/spreadsheets/d/1eNlbq7RqIjYqCaGa2xWzvpro6bshx2HSsLbYz_L3xMQ/edit?usp=sharing
+*
 *   @Aparna Goyal, 1911981092, 31/07/2021  */
 
 #include <stdio.h>
