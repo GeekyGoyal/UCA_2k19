@@ -4,25 +4,22 @@
 
 #include <stdio.h>
 
-void selectionSort(int arr[], int n) {
+void selectionSort(int arr[], int beginIndex, int n) {
 
-    //Base Case
-    if (n == 1){ 
+    if(beginIndex >= n-1) {
         return;
     }
-
-    int index = 0;
-
-    for (int i = 1; i < n; i++) {
-        if(arr[i] > arr[index])
-            index = i;
+    int minIndex = beginIndex;
+    for(int i = beginIndex; i < n; i++) {
+        if(arr[i] < arr[minIndex]) {
+            minIndex = i;
+        }
     }
+    int temp = arr[minIndex];
+    arr[minIndex] = arr[beginIndex];
+    arr[beginIndex] = temp;
 
-    int temp = arr[index];
-    arr[index] = arr[n-1];
-    arr[n-1] = temp;
-
-    selectionSort(arr, n - 1);
+    selectionSort(arr, beginIndex + 1,  n);
 
 }
 
@@ -35,7 +32,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    selectionSort(arr, n);
+    selectionSort(arr, 0, n);
     printf("The Sorted array is: ");
     for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
