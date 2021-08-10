@@ -6,18 +6,16 @@
 #define MAXSIZE 10     
 
 int stack[10];     
-int top = -1;  
+int top = 0;  
 
 int isempty() {
-
-   if(top == -1)
+   if(top == 0)
       return 1;
    else
       return 0;
 }
 
 int isfull() {
-
    if(top == MAXSIZE)
       return 1;
    else
@@ -25,11 +23,11 @@ int isfull() {
 }
 
 int push(int data) {
-
    if(!isfull()) {
       top = top + 1;   
       stack[top] = data;
-   } else {
+   } 
+   else {
       printf("Could not insert data, Stack is full.\n");
    }
 }
@@ -52,11 +50,9 @@ int pop() {
 
 int main() {
    //Push elements in a stack.
-   push(2);
-   push(4);
-   push(6);
-   push(8);
-   push(10);
+   for(int i = 1; i < MAXSIZE; i++) {
+      push(i*i);
+   }
    printf("The topmost element in the stack is: %d\n" ,peek());
    while(!isempty()) {
       pop();
