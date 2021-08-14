@@ -4,6 +4,9 @@
 
 #include <stdio.h>
 
+/* Optimal Approach using Divide and conquer
+Time Complexity: O(N Log N)
+*/
 int merge(int* arr, int start, int mid, int end) {
     int i = start;
     int j = (mid + 1);
@@ -39,12 +42,22 @@ int inversionCount(int* arr, int start, int end) {
         return 0;
     }
     //Merge Sort
-    int mid = (start + end)/2;
+    int mid = (start + end) >> 1;
     int x = inversionCount(arr, start, mid);
     int y = inversionCount(arr, mid+1, end);
     int z = merge(arr, start, mid, end); //cross inversions
     return x+y+z;
 }
+
+/* BruteForce or Naive solution O(N^2) approach
+    int count = 0;
+    for (int i = 0; i < n - 2; i++)
+        for (int j = i + 1; j < n - 1; j++)
+            if (arr[i] > arr[j]) { 
+                count++;
+            }
+    return count;
+**/
 
 
 int main() {
