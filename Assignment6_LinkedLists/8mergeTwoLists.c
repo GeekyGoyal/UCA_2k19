@@ -10,7 +10,6 @@
  * };
  */
 
-
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     // Base Case
     if(l1 == NULL) {
