@@ -48,7 +48,8 @@ int pop() {
       data = stack[top];
       top = top - 1;   
       return data;
-   } else {
+   }
+    else {
       printf("Could not retrieve data, Stack is empty.\n");
    }
 }
