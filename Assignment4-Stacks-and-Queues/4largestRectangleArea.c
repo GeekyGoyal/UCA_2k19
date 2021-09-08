@@ -2,8 +2,6 @@
 *
 *   @Aparna Goyal, 1911981092, 18/08/2021  */
 
-
-
 int largestRectangleArea(int* heights, int heightsSize) {
     int i, j, bars, area;
     bool calculated;
