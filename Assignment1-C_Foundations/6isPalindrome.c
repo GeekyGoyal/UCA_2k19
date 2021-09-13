@@ -14,15 +14,18 @@ bool isPalindrome(char * str){
     
     while(low < high){
         if(isalnum(str[low]) && isalnum(str[high])) {
-            if(tolower(str[low]) != tolower(str[high]))
+            if(tolower(str[low]) != tolower(str[high])) { 
                 return false;
+            }
             low++;
             high--;
         }
-        if(!isalnum(str[low]))
+        if(!isalnum(str[low])) { 
             low++;
-        if(!isalnum(str[high]))
+        }
+        if(!isalnum(str[high])) { 
             high--;        
+        }
     }
     return true;
 }
