@@ -23,7 +23,7 @@ didn't filled max and min elements in buckets
 
  2   |----8---------10----| |---------------------|   |-----------------------| |----20--------|  22
            bucket 0               bucket 1               bucket 2          bucket 3
-ans=20-10 =10
+ans = 20-10 = 10
 
 */
 
