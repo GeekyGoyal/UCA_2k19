@@ -34,3 +34,23 @@ vector<int> Solution::flip(string A) {
     }
     return give;
 }
+
+/***** OR *****/
+int flipBits(int* arr, int n) 
+{
+    int sum=0,c=0,aux=0;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==1)
+        {
+            c++;
+            aux = max(-1, aux-1);
+        }
+        else
+        {
+            aux = max(1, aux+1);
+        }
+        sum = max(sum, aux);
+    }
+    return c+sum;
+}
