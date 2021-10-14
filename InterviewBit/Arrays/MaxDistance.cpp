@@ -1,5 +1,9 @@
 /* Problem Link: https://www.interviewbit.com/problems/max-distance/ */
 
+/* Approach-1: One brute force solution consists in iterating over each pair of the array and finding the maximum of j - i. This solution is O(n²). */
+
+/* Approach-2: Another approach would be sorting the array, keeping track of the original indices. */
+
 int Solution::maximumGap(const vector<int> &A) {
     int n = A.size();
     vector<int> maxFromEnd(n+1, INT_MIN);
