@@ -1,5 +1,14 @@
 /* Problem Link: https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/ */
 
+
+/*  Approach 1: Using Binomial Coefficient. Find ⁿc₀ t0 ⁿcₓ (x=col-1) for given row number n
+*               Time Complexity : O(n²)
+*               Space Complexity: O(1)
+*   Approach 2: Using simple math, Multiply every previous element with (n-i)/(i+1) where i is the given row index.
+*               Time Complexity : O(n)
+*               Space Complexity: O(1)
+*/
+
 vector<int> Solution::getRow(int A) {
     vector<int>a;
     int n = 1;
