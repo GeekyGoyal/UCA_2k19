@@ -3,7 +3,10 @@
 // USING MATRIX EXPONENTIATION 
 
 /* If we n times multiply the matrix M = {{1, 1},{1, 0}} to itself (in other words calculate power(M, n )), then we get the (n+1)th Fibonacci number as the element at row 
-* and column (0, 0) in the resultant matrix. */
+* and column (0, 0) in the resultant matrix. 
+* 
+* Time Complexity: O(LogA)
+* Extra Space: O(LogA) if we consider the function call stack size, otherwise O(1).*/
 
 long long M[2][2] = {{1, 1}, {1, 0}};
 long long m = 1000000007;
