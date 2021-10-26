@@ -2,6 +2,9 @@
 
 // USING MATRIX EXPONENTIATION 
 
+/* If we n times multiply the matrix M = {{1, 1},{1, 0}} to itself (in other words calculate power(M, n )), then we get the (n+1)th Fibonacci number as the element at row 
+* and column (0, 0) in the resultant matrix. */
+
 long long M[2][2] = {{1, 1}, {1, 0}};
 long long m = 1000000007;
 
